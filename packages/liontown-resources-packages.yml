@@ -1,0 +1,15 @@
+name: Liontown Ltd packages
+generated: '2026-10-21'
+method: none
+note: >-
+  Checked, nothing there. Liontown Ltd is an ASX-listed lithium miner with no public developer API,
+  documentation or SDK. No first-party package found: npm registry.npmjs.org/liontown 404,
+  PyPI pypi.org/pypi/liontown/json 404, RubyGems liontown 404, crates.io liontown 404, and a GitHub
+  repository search for "liontown resources" returned 0 results (2026-10-21).
+checked:
+- https://registry.npmjs.org/liontown
+- https://pypi.org/pypi/liontown/json
+- https://rubygems.org/api/v1/gems/liontown.json
+- https://crates.io/api/v1/crates/liontown
+- https://api.github.com/search/repositories?q=liontown+resources
+packages: []

@@ -1,0 +1,102 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 8
+  own: 2
+  other_domain: 3
+  platform: 3
+  roles:
+  - api
+  - marketing
+  - other
+  - website
+hosts:
+- host: api.com.au
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: api.com.au
+  role: api
+  relation: other-domain
+- host: api.liontown.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: liontown.com
+  role: api
+  relation: own
+- host: au.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: jobs.ltresources.com.au
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Careers
+  serves: []
+  registrable_domain: ltresources.com.au
+  role: marketing
+  relation: other-domain
+- host: ltresources.com.au
+  found_by:
+  - probed
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: ltresources.com.au
+  role: other
+  relation: other-domain
+- host: www.liontown.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - Newsroom
+  - PrivacyPolicy
+  - TermsOfService
+  - Contact
+  - Investors
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: liontown.com
+  role: website
+  relation: own
+- host: www.youtube.com
+  found_by:
+  - pointer
+  types:
+  - YouTube
+  serves: []
+  registrable_domain: youtube.com
+  role: other
+  relation: platform
+- host: x.com
+  found_by:
+  - pointer
+  types:
+  - X
+  serves: []
+  registrable_domain: x.com
+  role: other
+  relation: platform

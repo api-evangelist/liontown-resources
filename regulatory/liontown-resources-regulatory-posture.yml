@@ -1,0 +1,44 @@
+generated: '2026-10-21'
+method: searched
+source: https://www.liontown.com/privacy/
+signals:
+  data_subject_request:
+    url: https://www.liontown.com/privacy/
+    section: 'Accessing or correcting your information'
+    channel: Contact form on liontown.com
+    stated_sla: 'We aim to make your information available within 30 days.'
+    rights_named: [access, correction, opt-out of direct marketing]
+    escalation: Office of the Australian Information Commissioner (OAIC)
+    evidence:
+    - source: https://www.liontown.com/privacy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'To make a request, please use the Contact form on our website. We aim to make your information available within 30 days. We may need to verify your identity, and in some circumstances there may be a valid reason to deny your request, in which case we will explain why.'
+    - source: https://www.liontown.com/privacy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'If you are not satisfied with the outcome of our internal investigation, you may lodge a complaint with the Office of the Australian Information Commissioner (OAIC):'
+    note: >-
+      Under the Australian Privacy Act 1988 and Spam Act 2003 the policy names rights of access, correction
+      and marketing opt-out, with a 30-day target and OAIC escalation. No deletion or portability right is named.
+  data_residency:
+    url: https://www.liontown.com/privacy/
+    section: 'Overseas disclosure'
+    evidence:
+    - source: https://www.liontown.com/privacy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'We may disclose your personal information to recipients outside of Australia for the purposes described in this policy, including but not limited to the Philippines, Malaysia and India.'
+    note: >-
+      Not a residency commitment: the policy says personal information may leave Australia and names
+      Philippines, Malaysia and India as destinations, without limiting the list.
+  subprocessors:
+    url: https://www.liontown.com/privacy/
+    section: 'Third party suppliers'
+    evidence:
+    - source: https://www.liontown.com/privacy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'auditors, lawyers, accountants, consultants, insurers, data service providers, our share registry provider, and organisations we partner with.'
+    note: >-
+      Lists categories of third-party recipients only. No named subprocessor list is published.

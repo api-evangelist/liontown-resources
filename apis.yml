@@ -1,23 +1,109 @@
 aid: liontown-resources
-name: Liontown Resources
-description: 'Liontown Resources is a company surfaced via the API Evangelist harvest backlog (source:
-  australia-apidays-2026) and added to the network as a stub for full-pipeline profiling.'
+
+name: Liontown Ltd
+
+description: 'Liontown Ltd (formerly Liontown Resources Limited, ASX: LTR, ABN 39 118 153 825) is a
+  Perth, Western Australia based, ASX-listed battery minerals company. It operates the Kathleen Valley
+  lithium project, Australia''s first underground lithium mine, and holds the Buldania and Centenario
+  projects plus downstream expansion plans. Its corporate website publishes investor, ASX release,
+  sustainability/ESG and careers information; no public developer API, documentation or developer
+  portal was found on its own sites.'
+
 url: https://raw.githubusercontent.com/api-evangelist/liontown-resources/refs/heads/main/apis.yml
+
+image: https://www.liontown.com/wp-content/themes/liontownresources/assets/images/logo.svg
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Mining
+- Lithium
+- Battery Minerals
+- ASX Listed
+- Australia
+- Sustainability
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/liontown-resources-llms.txt
+- type: Hosts
+  url: hosts/liontown-resources-hosts.yml
+- type: Vendors
+  url: vendors/liontown-resources-vendors.yml
+- type: DomainSecurity
+  url: security/liontown-resources-domain-security.yml
 - type: Website
-  url: https://ltresources.com.au/
+  url: https://www.liontown.com/
+- type: Newsroom
+  url: https://www.liontown.com/news-media/news/
+- type: PrivacyPolicy
+  url: https://www.liontown.com/privacy/
+- type: TermsOfService
+  name: Legal
+  url: https://www.liontown.com/legal/
+- type: Contact
+  url: https://www.liontown.com/contact-us/
+- type: Investors
+  url: https://www.liontown.com/investors/
+- type: Careers
+  url: https://jobs.ltresources.com.au/
+- type: LinkedIn
+  url: https://au.linkedin.com/company/liontown-resources-limited
+- type: YouTube
+  url: https://www.youtube.com/@LiontownRes
+- type: X
+  url: https://x.com/LiontownRes
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: ltresources.com.au (the harvested Website) redirects to www.liontown.com, which identifies
+    itself as Liontown Ltd (ABN 39 118 153 825, ASX LTR) and links the jobs.ltresources.com.au careers
+    host and the liontown-resources-limited LinkedIn page. Same company, renamed; Website updated to
+    the redirect target. No developer portal, API docs or API reference found.
+  evidence:
+  - url: https://ltresources.com.au/
+    status: 200
+    note: redirects to https://www.liontown.com/
+  - url: https://www.liontown.com/
+    status: 200
+  - url: https://www.liontown.com/about/corporate-directory/
+    status: 200
+  - url: https://www.liontown.com/legal/
+    status: 200
+  - url: https://www.liontown.com/privacy/
+    status: 200
+  - url: https://www.liontown.com/news-media/news/
+    status: 200
+  - url: https://www.liontown.com/contact-us/
+    status: 200
+  - url: https://www.liontown.com/investors/
+    status: 200
+  - url: https://jobs.ltresources.com.au/
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

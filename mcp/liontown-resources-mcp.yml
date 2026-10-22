@@ -1,0 +1,21 @@
+name: Liontown Ltd MCP Server
+type: MCPServer
+generated: '2026-10-21'
+method: none
+source: https://www.liontown.com/
+status: none
+description: >-
+  No official hosted or local MCP server from Liontown Ltd was found, and no candidate tool list
+  could be derived because the provider publishes no OpenAPI or other API contract. Pre-flight
+  contract discovery (2026-10-21) found no OpenAPI, AsyncAPI, GraphQL or MCP on ltresources.com.au,
+  jobs.ltresources.com.au or www.liontown.com, and a web search for a Liontown MCP server or
+  developer API returned nothing for this company.
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []
+evidence:
+- url: https://www.liontown.com/llms.txt
+  status: 200
+  note: Yoast-generated llms.txt indexes only corporate web pages; no API or MCP surface listed.
